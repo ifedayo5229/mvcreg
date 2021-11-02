@@ -1,0 +1,37 @@
+@model Register
+
+@{
+
+    ViewData["Title"] = "Welcome!!!!!!!";
+     <h4> <b>@Model.FirstName</b></h4>
+
+}
+<h1>@ViewData["Title"]</h1>
+<style>
+    .big-container {
+ background-color: #ddd;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  padding: 100px;
+  margin: 100px;
+}
+
+h3{
+    color: whitesmoke;
+}
+</style>
+
+<div class="big-container">
+<p> <b>You details has been saved ,take note of your net income below .</b></p>
+
+
+
+<h3> Email:  @Model.Email</h3>
+<h3> Phone Number : @Model.PhoneNumber</h3>
+<h3> Salary : @Model.Salary</h3>
+<h3> Net Income : @Model.NetIncome</h3>
+
+</div>
+

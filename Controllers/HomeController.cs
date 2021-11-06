@@ -30,14 +30,22 @@ namespace Registermvc.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Privacy(Register model)
         {
-            var data = HttpContext.Session.GetString("data");
-            var userprofile = JsonConvert.DeserializeObject<Register>(data);
-            return View(userprofile);
+            return View(model);
         }
 
+
+                // Register registerview  = (Register)TempData["data"];
+                // return View(registerview);
+            
+            //  var data = TempData["data"];
+            // var userprofile = JsonConvert.DeserializeObject<Register>(data);
+            // return View(userprofile);
+        
+
         [HttpPost]
+
         public IActionResult Index(RegisterViewModel model)
         {
             if (!ModelState.IsValid) { return View(); }
@@ -46,19 +54,43 @@ namespace Registermvc.Controllers
             if (result.Item2 == 1)
             {
 
-                string data = JsonConvert.SerializeObject(result.Item1);
-                HttpContext.Session.SetString("data", data);
-
-
-                return LocalRedirect("~/Home/Privacy");
+                return RedirectToAction("Privacy","Home", result.Item1);
             }
             else
             {
                 return View();
             }
 
-
-
         }
+
+
+
+
+
+
+        // public IActionResult Index(RegisterViewModel model)
+        // {
+        //     if (!ModelState.IsValid) { return View(); }
+
+        //     string result = _register.RegisterNewUser(model);
+        //     if (result.Item2 == 1)
+        //     {
+                     
+               
+        //         var data = JsonConvert.SerializeObject(result.Item1);
+        //         // HttpContext.Session.SetString("data", data);
+        //          TempData["data"]= data;
+
+
+        //         return LocalRedirect("~/Home/Privacy");
+        //     }
+        //     else
+        //     {
+        //         return View();
+        //     }
+
+
+
+        
     }
 }

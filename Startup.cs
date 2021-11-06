@@ -12,6 +12,7 @@ using Microsoft.EntityFrameworkCore;
 using Registermvc.Models;
 using Registermvc.Services;
 using Microsoft.Net.Http.Headers;
+using Microsoft.AspNetCore.Http;
 
 namespace Registermvc
 {
@@ -28,12 +29,24 @@ namespace Registermvc
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddSession(options => { options.IdleTimeout = TimeSpan.FromMinutes(30);
-             options.Cookie.HttpOnly = true; options.Cookie.IsEssential = true; options.Cookie.SecurePolicy =
-              Microsoft.AspNetCore.Http.CookieSecurePolicy.Always; 
+
+
+
+            // services.AddDistributedMemoryCache();  
+            // services.AddSession(options => { options.IdleTimeout = TimeSpan.FromMinutes(30);
+            //  options.Cookie.HttpOnly = true; options.Cookie.IsEssential = true; options.Cookie.SecurePolicy =
+            //   Microsoft.AspNetCore.Http.CookieSecurePolicy.Always; 
+
+            IServiceCollection serviceCollection = services.AddSession(options =>
+             { options.IdleTimeout = TimeSpan.FromMinutes(30); options.Cookie.HttpOnly = true; 
+             options.Cookie.IsEssential = true; options.Cookie.SecurePolicy = CookieSecurePolicy.Always; 
+             options.Cookie.SameSite = Microsoft.AspNetCore.Http.SameSiteMode.Strict;
+
+
+
               });
            
-
+             
 
               string connectionString = Configuration.GetConnectionString("Registerdb");
             services.AddDbContext<RegisterdbContext>(c => c.UseSqlServer(connectionString));

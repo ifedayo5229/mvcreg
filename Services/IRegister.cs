@@ -7,6 +7,8 @@ namespace Registermvc.Services
     {
     //  int  RegisterNewUser (RegisterViewModel model); 
     Tuple<Register,int>  RegisterNewUser(RegisterViewModel model);
+
+    
      
     }
 }

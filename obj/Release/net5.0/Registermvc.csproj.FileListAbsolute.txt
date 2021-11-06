@@ -50,7 +50,6 @@ C:\Users\HP\Desktop\IFEDAYO SP\RegisterMvc\Registermvc\obj\Release\net5.0\Regist
 C:\Users\HP\Desktop\IFEDAYO SP\RegisterMvc\Registermvc\obj\Release\net5.0\Registermvc.RazorAssemblyInfo.cache
 C:\Users\HP\Desktop\IFEDAYO SP\RegisterMvc\Registermvc\obj\Release\net5.0\Registermvc.RazorAssemblyInfo.cs
 C:\Users\HP\Desktop\IFEDAYO SP\RegisterMvc\Registermvc\obj\Release\net5.0\staticwebassets\Registermvc.StaticWebAssets.Manifest.cache
-C:\Users\HP\Desktop\IFEDAYO SP\RegisterMvc\Registermvc\obj\Release\net5.0\staticwebassets\Registermvc.StaticWebAssets.xml
 C:\Users\HP\Desktop\IFEDAYO SP\RegisterMvc\Registermvc\obj\Release\net5.0\scopedcss\bundle\Registermvc.styles.css
 C:\Users\HP\Desktop\IFEDAYO SP\RegisterMvc\Registermvc\obj\Release\net5.0\Registermvc.TagHelpers.input.cache
 C:\Users\HP\Desktop\IFEDAYO SP\RegisterMvc\Registermvc\obj\Release\net5.0\Registermvc.TagHelpers.output.cache
@@ -70,8 +69,4 @@ C:\Users\HP\Desktop\IFEDAYO SP\RegisterMvc\Registermvc\obj\Release\net5.0\Regist
 C:\Users\HP\Desktop\IFEDAYO SP\RegisterMvc\Registermvc\obj\Release\net5.0\ref\Registermvc.dll
 C:\Users\HP\Desktop\IFEDAYO SP\RegisterMvc\Registermvc\obj\Release\net5.0\Registermvc.pdb
 C:\Users\HP\Desktop\IFEDAYO SP\RegisterMvc\Registermvc\obj\Release\net5.0\Registermvc.genruntimeconfig.cache
-C:\Users\HP\Desktop\IFEDAYO SP\RegisterMvc\Registermvc\bin\Release\net5.0\app\web.config
-C:\Users\HP\Desktop\IFEDAYO SP\RegisterMvc\Registermvc\bin\Release\net5.0\app\appsettings.Development.json
-C:\Users\HP\Desktop\IFEDAYO SP\RegisterMvc\Registermvc\bin\Release\net5.0\app\appsettings.json
-C:\Users\HP\Desktop\IFEDAYO SP\RegisterMvc\Registermvc\bin\Release\net5.0\app\Registermvc.deps.json
-C:\Users\HP\Desktop\IFEDAYO SP\RegisterMvc\Registermvc\bin\Release\net5.0\app\Registermvc.runtimeconfig.json
+C:\Users\HP\Desktop\IFEDAYO SP\RegisterMvc\Registermvc\bin\Release\net5.0\Registermvc.StaticWebAssets.xml
